@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>YT Continue Later</h1>
+        <button id="clearAll" class="btn-clear" title="Очистить всё">🗑</button>
+      </header>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="currentVideo" class="current-video hidden">
+        <div class="current-label">Сейчас смотрите:</div>
+        <div class="current-info">
+          <span id="currentTitle" class="current-title"></span>
+          <span id="currentTime" class="current-time"></span>
+        </div>
+        <button id="copyCurrent" class="btn-copy">Копировать ссылку</button>
+      </div>
+
+      <div id="savedList" class="saved-list"></div>
+
+      <div id="empty" class="empty hidden">
+        Нет сохранённых видео.<br />Поставьте паузу — и ссылка появится здесь.
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
